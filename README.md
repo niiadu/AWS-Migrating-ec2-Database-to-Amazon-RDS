@@ -30,6 +30,8 @@
 
 <img width="1498" alt="Screenshot 2024-08-12 at 7 05 42 PM" src="https://github.com/user-attachments/assets/2d98f351-d3a0-4f24-a568-bb37ffe6e303">
 
+<img width="1425" alt="Screenshot 2024-08-12 at 7 32 19 PM" src="https://github.com/user-attachments/assets/6b422518-2e55-4cdf-bca3-2ba6175f7e72">
+
 <img width="617" alt="Screenshot 2024-08-12 at 7 07 10 PM" src="https://github.com/user-attachments/assets/c48c0712-0995-4eaa-9d38-a99d44ef6ff8">
 
 <img width="1504" alt="Screenshot 2024-08-12 at 7 07 32 PM" src="https://github.com/user-attachments/assets/290bcc5b-a1bc-40c7-820a-fc50e4276b14">

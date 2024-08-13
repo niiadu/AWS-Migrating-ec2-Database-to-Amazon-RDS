@@ -1,4 +1,4 @@
-# Migrating an EC2 hosted Database to Amazon RDS
+# Migrating an EC2-hosted Database to Amazon RDS
 
 <img width="1192" alt="Screenshot 2024-08-12 at 6 37 49 PM" src="https://github.com/user-attachments/assets/9bd6be7c-0937-47e5-b9db-64d518dc03a4">
 
@@ -22,10 +22,17 @@
 
 <img width="1166" alt="Screenshot 2024-08-12 at 6 56 15 PM" src="https://github.com/user-attachments/assets/5dd6b232-458d-48d9-9c89-01e05254ec77">
 
-<img width="609" alt="Screenshot 2024-08-12 at 6 57 07 PM" src="https://github.com/user-attachments/assets/96a04196-2e9d-42e3-97d1-a0571e1d07ac">
-
 <img width="757" alt="Screenshot 2024-08-12 at 6 57 33 PM" src="https://github.com/user-attachments/assets/4b6fc994-f2b4-4462-bbc5-67ae17707592">
 
 <img width="1502" alt="Screenshot 2024-08-12 at 7 05 30 PM" src="https://github.com/user-attachments/assets/7a3d85f1-6805-404c-8f83-c50009700ce7">
+
+<img width="609" alt="Screenshot 2024-08-12 at 6 57 07 PM" src="https://github.com/user-attachments/assets/96a04196-2e9d-42e3-97d1-a0571e1d07ac">
+
+<img width="1498" alt="Screenshot 2024-08-12 at 7 05 42 PM" src="https://github.com/user-attachments/assets/2d98f351-d3a0-4f24-a568-bb37ffe6e303">
+
+<img width="617" alt="Screenshot 2024-08-12 at 7 07 10 PM" src="https://github.com/user-attachments/assets/c48c0712-0995-4eaa-9d38-a99d44ef6ff8">
+
+
+
 
 

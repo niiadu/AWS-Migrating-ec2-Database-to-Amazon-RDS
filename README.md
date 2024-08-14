@@ -1,6 +1,6 @@
 # Migrating an EC2-hosted Database to Amazon RDS
-Create an RDS instance that complies with these specifications.
-
+## Create an RDS instance that complies with these specifications.
+```
 Engine type: MariaDB
 Templates: Dev/Test
 DB instance identifier: <yourname?
@@ -12,6 +12,7 @@ Allocated storage: 20 GiB
 Subnet Group: subnet-group, where the database is not publicly accessible.
 Create a security group, and unselect the default security group.
 Availability Zone: Choose the first Availability Zone in the list, which ends in a. For example, if the Region is us-east-1, choose us-east-1a.
+```
 Database port: Keep the default TCP port of 3306.
 
 <img width="1192" alt="Screenshot 2024-08-12 at 6 37 49 PM" src="https://github.com/user-attachments/assets/9bd6be7c-0937-47e5-b9db-64d518dc03a4">

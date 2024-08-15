@@ -52,6 +52,8 @@ mysqldump --databases cafe_db -u root -p > CafeDbDump.sql
 
 <img width="808" alt="Screenshot 2024-08-12 at 6 35 33 PM" src="https://github.com/user-attachments/assets/f9e901b2-305b-45d8-ab2f-c644841fb998">
 
+## Add EC2 security group to RDS security group
+In order for the ec2 to send the database information to the RDS database, we would have to add an inbound rule to the RDS security group, to accept the traffic coming from the ec2 security group
 <img width="1229" alt="Screenshot 2024-08-12 at 6 49 39 PM" src="https://github.com/user-attachments/assets/356dfb00-bcf4-458a-9d17-0bc01261fa7c">
 
 <img width="1140" alt="Screenshot 2024-08-12 at 6 51 29 PM" src="https://github.com/user-attachments/assets/ab1b609b-6015-4b17-a95f-e0c8744ee8aa">

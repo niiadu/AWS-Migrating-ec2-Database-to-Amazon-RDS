@@ -43,7 +43,7 @@ This would prompt a password
 I chose the /cafe/dbPassword parameter, and copied the Value to my clipboard. and entered into the space provided to enter password
 <img width="835" alt="Screenshot 2024-08-12 at 6 29 14 PM" src="https://github.com/user-attachments/assets/737255ae-56bf-4142-85bb-7abe67cd2d0e">
 
-<img width="1183" alt="Screenshot 2024-08-12 at 6 53 36 PM" src="https://github.com/user-attachments/assets/f4bcd0c4-4334-4adf-8d2d-54114e702987">
+<img width="609" alt="Screenshot 2024-08-12 at 6 57 07 PM" src="https://github.com/user-attachments/assets/96a04196-2e9d-42e3-97d1-a0571e1d07ac">
 
 <img width="578" alt="Screenshot 2024-08-12 at 6 32 49 PM" src="https://github.com/user-attachments/assets/33f942af-452c-48f3-9061-de924e2613ff">
 
@@ -67,26 +67,36 @@ I was able to access the RDS database through the ec2 instance, and the output s
 mysql -u admin -p --host <rds-endpoint> < CafeDbDump.sql
 ```
 If you look closely, you can see the database was add called "cafe_db"
-<img width="609" alt="Screenshot 2024-08-12 at 6 57 07 PM" src="https://github.com/user-attachments/assets/96a04196-2e9d-42e3-97d1-a0571e1d07ac">
 
 <img width="1166" alt="Screenshot 2024-08-12 at 6 56 15 PM" src="https://github.com/user-attachments/assets/5dd6b232-458d-48d9-9c89-01e05254ec77">
 
 <img width="757" alt="Screenshot 2024-08-12 at 6 57 33 PM" src="https://github.com/user-attachments/assets/4b6fc994-f2b4-4462-bbc5-67ae17707592">
 
+## Lets Access the website
 <img width="1502" alt="Screenshot 2024-08-12 at 7 05 30 PM" src="https://github.com/user-attachments/assets/7a3d85f1-6805-404c-8f83-c50009700ce7">
 
+## Order history, with the old database
 <img width="1498" alt="Screenshot 2024-08-12 at 7 05 42 PM" src="https://github.com/user-attachments/assets/2d98f351-d3a0-4f24-a568-bb37ffe6e303">
 
+## Changed Parameter store value with new credentials from RDS database
 <img width="1425" alt="Screenshot 2024-08-12 at 7 32 19 PM" src="https://github.com/user-attachments/assets/6b422518-2e55-4cdf-bca3-2ba6175f7e72">
 
+## Stopped MariaDB on ec2 instance
 <img width="617" alt="Screenshot 2024-08-12 at 7 07 10 PM" src="https://github.com/user-attachments/assets/c48c0712-0995-4eaa-9d38-a99d44ef6ff8">
 
+## Output to show its stopped 
 <img width="1504" alt="Screenshot 2024-08-12 at 7 07 32 PM" src="https://github.com/user-attachments/assets/290bcc5b-a1bc-40c7-820a-fc50e4276b14">
 
+## I made an order
+This is to confirm if my newly configured RDS database is working
 <img width="1501" alt="Screenshot 2024-08-12 at 7 08 05 PM" src="https://github.com/user-attachments/assets/c353983a-efe3-4a1a-9086-b04b68242f11">
 
+## New Order display with older orders
+This is proof that the database contains the orders from the mariadb run on the ec2 instance. Our transfer of data worked
 <img width="1503" alt="Screenshot 2024-08-12 at 7 08 19 PM" src="https://github.com/user-attachments/assets/45ee78f0-4d2b-4da0-924a-a26dec6d754a">
 
+## Made more orders
+This is to confirm its working the right way
 <img width="1497" alt="Screenshot 2024-08-12 at 7 08 43 PM" src="https://github.com/user-attachments/assets/49663d8e-7727-49e2-af2c-19b1c086774d">
 
 <img width="1504" alt="Screenshot 2024-08-12 at 7 08 54 PM" src="https://github.com/user-attachments/assets/47f32ccd-814d-4a6a-a703-065e35731a01">

@@ -43,6 +43,8 @@ This would prompt a password
 I chose the /cafe/dbPassword parameter, and copied the Value to my clipboard. and entered into the space provided to enter password
 <img width="835" alt="Screenshot 2024-08-12 at 6 29 14 PM" src="https://github.com/user-attachments/assets/737255ae-56bf-4142-85bb-7abe67cd2d0e">
 
+<img width="1183" alt="Screenshot 2024-08-12 at 6 53 36 PM" src="https://github.com/user-attachments/assets/f4bcd0c4-4334-4adf-8d2d-54114e702987">
+
 <img width="578" alt="Screenshot 2024-08-12 at 6 32 49 PM" src="https://github.com/user-attachments/assets/33f942af-452c-48f3-9061-de924e2613ff">
 
 ## Migrating database to a local file on the ec2 server using myqldump
@@ -53,13 +55,18 @@ mysqldump --databases cafe_db -u root -p > CafeDbDump.sql
 <img width="808" alt="Screenshot 2024-08-12 at 6 35 33 PM" src="https://github.com/user-attachments/assets/f9e901b2-305b-45d8-ab2f-c644841fb998">
 
 ## Add EC2 security group to RDS security group
-In order for the ec2 to send the database information to the RDS database, we would have to add an inbound rule to the RDS security group, to accept the traffic coming from the ec2 security group
+For the ec2 to send the database information to the RDS database, we would have to add an inbound rule to the RDS security group, to accept the traffic coming from the ec2 security group
 <img width="1229" alt="Screenshot 2024-08-12 at 6 49 39 PM" src="https://github.com/user-attachments/assets/356dfb00-bcf4-458a-9d17-0bc01261fa7c">
 
+## RDS Database
+I was able to access the RDS database through the ec2 instance, and the output shows the current databases provisioned on the DB
 <img width="1140" alt="Screenshot 2024-08-12 at 6 51 29 PM" src="https://github.com/user-attachments/assets/ab1b609b-6015-4b17-a95f-e0c8744ee8aa">
 
-<img width="1183" alt="Screenshot 2024-08-12 at 6 53 36 PM" src="https://github.com/user-attachments/assets/f4bcd0c4-4334-4adf-8d2d-54114e702987">
-
+## Transfer sql database from e2 server to RDS DB
+```
+mysql -u admin -p --host <rds-endpoint> < CafeDbDump.sql
+```
+If you look closely, you can see the database was add called "cafe_db"
 <img width="609" alt="Screenshot 2024-08-12 at 6 57 07 PM" src="https://github.com/user-attachments/assets/96a04196-2e9d-42e3-97d1-a0571e1d07ac">
 
 <img width="1166" alt="Screenshot 2024-08-12 at 6 56 15 PM" src="https://github.com/user-attachments/assets/5dd6b232-458d-48d9-9c89-01e05254ec77">
